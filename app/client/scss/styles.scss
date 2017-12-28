@@ -1,0 +1,27 @@
+$medium-g: #333;
+body {
+    color: $medium-g;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+}
+
+.visible {
+    display: block;
+    margin: 0;
+    padding: 1rem 0;
+    li {
+        padding: .5rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
