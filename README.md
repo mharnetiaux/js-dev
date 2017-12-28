@@ -7,5 +7,6 @@
 
 Local enviornment for devs to mess around with React. It runs a local server listening on `localhost:3000`, once you've run the following commands:
 
-  1. `cd` into project root directory -- run `npm install`. 
+  1. `cd` into project root directory -- run `npm install`
+  
   2. `npm run build` -- navigate to `localhost:3000`
