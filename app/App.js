@@ -1,7 +1,7 @@
 import React from 'react';
 import update from 'immutability-helper';
 import Nav from './components/Nav';
-import './client/scss/styles.scss';
+import './client/scss/components/styles.scss';
 class App extends React.Component {
 
     constructor() {

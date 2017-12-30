@@ -1,6 +1,6 @@
-$medium-g: #333;
+@import "variables";
+
 body {
-    color: $medium-g;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2rem;
 }
@@ -11,6 +11,7 @@ ul {
 
 button {
     border: none;
+    color: $medium-g;
 }
 
 .visible {
