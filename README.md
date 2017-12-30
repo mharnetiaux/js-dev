@@ -15,6 +15,6 @@ Local enviornment for devs to mess around with React. It runs a local server lis
 
   es6 to es5 -- transpile es6 to es5
   
-  sass -- css precompiler
+  sass -- preprocessor for css
   
   hot reloading -- your js and css is compiled on the fly and server refreshed... Just press save.
