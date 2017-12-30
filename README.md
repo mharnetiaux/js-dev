@@ -12,4 +12,9 @@ Local enviornment for devs to mess around with React. It runs a local server lis
   2. `npm run build` -- navigate to `localhost:3000`
 
 # Cool Features
+
+  es6 to es5 -- transpile es6 to es5
+  
+  sass - css precompiler
+  
   hot reloading -- your js and css is compiled on the fly and server refreshed... Just press save.
