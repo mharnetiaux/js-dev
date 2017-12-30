@@ -43,7 +43,7 @@ const config = {
         }),
         new HtmlWebpackPlugin({
             tile: 'Home Page Template',
-            template: path.resolve(__dirname, './app/server/views/main.hbs'),
+            template: path.resolve(__dirname, './server/views/main.hbs'),
             inject: 'body',
             filename: 'main.hbs'
         }),
