@@ -2,11 +2,12 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
+
 const config = {
     entry: {
         app: [
             'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-            './app/index.js'
+            './app/app.js'
         ]
     },
     output: {
@@ -46,11 +47,7 @@ const config = {
             inject: 'body',
             filename: 'main.hbs'
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     stats: {
         children: false
