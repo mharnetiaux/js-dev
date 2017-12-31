@@ -13,7 +13,7 @@ const config = {
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, './dist/assets/'),
-        filename: 'scripts/[name].bundle.js',
+        filename: 'bundle.js',
     },
     module: {
         rules: [{
@@ -32,12 +32,19 @@ const config = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader']
                 })
+            },
+            {
+                test: /\.(less)$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'less-loader']
+                })
             }
         ]
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'styles/[name].bundle.css',
+            filename: 'bundle.css',
             allChunks: true,
             disable: true
         }),

@@ -19,6 +19,8 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.29.0",
     "immutability-helper": "^2.6.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
     "loader-utils": "^1.1.0",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",

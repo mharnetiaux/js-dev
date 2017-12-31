@@ -1,4 +1,5 @@
-import './client/scss/base.scss';
+import './client/sass-styles.scss';
+import './client/less-styles.less';
 
 import React from 'react';
 import update from 'immutability-helper';
