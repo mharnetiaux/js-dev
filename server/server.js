@@ -20,7 +20,7 @@ app.engine('hbs', exphbs());
 
 app.use(express.static(webpackConfig.output.path), middleware);
 
-app.use(require("webpack-hot-middleware")(compiler));
+app.use(hot_middleware);
 
 app.get('/',(req, res) => {
     "use strict";
