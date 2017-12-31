@@ -1,5 +1,8 @@
 import path from 'path';
 
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = process.env.NODE_ENV === 'production';
+
 const options = {
     contentBase:path.resolve(__dirname, './dist'),
     historyApiFallback: true,
