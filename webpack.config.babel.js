@@ -11,9 +11,8 @@ const config = {
         ]
     },
     output: {
-        publicPath: '/',
-        path: path.resolve(__dirname, './dist/assets/'),
-        filename: 'bundle.js',
+        path: __dirname + '/dist',
+        filename: 'scripts/[name].bundle.js',
     },
     module: {
         rules: [{
@@ -39,20 +38,23 @@ const config = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'less-loader']
                 })
+            },
+            {
+                test: /\.(hbs)$/,
+                use: [{loader:'handlebars-loader'}]
             }
         ]
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'bundle.css',
-            allChunks: true,
-            disable: true
+            filename: 'styles/[name].bundle.css',
+            disable: false
         }),
         new HtmlWebpackPlugin({
             tile: 'Home Page Template',
             template: path.resolve(__dirname, './server/views/main.hbs'),
             inject: 'body',
-            filename: 'main.hbs'
+            filename: 'index.html'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],

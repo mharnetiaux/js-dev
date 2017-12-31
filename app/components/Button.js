@@ -8,7 +8,7 @@ let Button=(props)=>{
     );
 };
 
-Button.propTypes = {
+Button.PropTypes = {
     action:PropTypes.func,
     text:PropTypes.string,
 };
