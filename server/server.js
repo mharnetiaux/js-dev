@@ -7,7 +7,6 @@ import config from '../webpack.config.babel';
 import options from '../webpack/options.js';
 
 const app = express(),
-      isDevelopment = true,
       port = options.port,
       compiler = webpack(config),
       middleware = webpack_dev_middleware(compiler, options),
@@ -25,11 +24,7 @@ app.use(hot_middleware);
 
 app.get('/',(req, res)=>{
     "use strict";
-    res.render('main',
-        {
-            isDevelopment:isDevelopment
-        }
-    );
+    res.render('main');
 });
 
 app.listen(port);
