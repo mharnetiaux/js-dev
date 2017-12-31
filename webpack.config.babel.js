@@ -3,6 +3,8 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 
+const bool = false;
+
 // Move out
 function entryDev(bool) {
 
@@ -26,7 +28,7 @@ function toggleOn(bool) {
 
 
 const config = {
-    entry: entryDev(true),
+    entry: entryDev(bool),
     output: {
         path: __dirname + '/dist',
         filename: 'scripts/[name].bundle.js',
@@ -68,7 +70,7 @@ const config = {
     plugins: [
         new ExtractTextPlugin({
             filename: 'styles/[name].bundle.css',
-            disable: toggleOn(true)
+            disable: toggleOn(false)
         }),
         new HtmlWebpackPlugin({
             tile: 'Home Page Template',

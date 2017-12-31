@@ -1,6 +1,8 @@
 import path from 'path';
 import webpackConfig from '../webpack.config.babel';
 
+
+
 const options = {
     publicPath:webpackConfig.output.publicPath,
     contentBase:path.resolve(__dirname, './dist'),
