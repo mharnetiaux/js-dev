@@ -1,9 +1,8 @@
 import path from 'path';
-
-const isDev = process.env.NODE_ENV === 'development';
-const isProd = process.env.NODE_ENV === 'production';
+import webpackConfig from '../webpack.config.babel';
 
 const options = {
+    publicPath:webpackConfig.output.publicPath,
     contentBase:path.resolve(__dirname, './dist'),
     historyApiFallback: true,
     compress: true,
