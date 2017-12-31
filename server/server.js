@@ -16,13 +16,13 @@ app.set('view engine', 'hbs', 'views');
 
 app.set('views','./server/views');
 
-app.engine('hbs',exphbs());
+app.engine('hbs', exphbs());
 
-app.use(express.static(config.output.path),middleware);
+app.use(express.static(config.output.path), middleware);
 
 app.use(hot_middleware);
 
-app.get('/',(req, res)=>{
+app.get('/',(req, res) => {
     "use strict";
     res.render('main');
 });
