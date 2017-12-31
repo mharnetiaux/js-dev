@@ -1,5 +1,5 @@
-import './client/sass-styles.scss';
-import './client/less-styles.less';
+import './styles/less/styles.less'
+import './styles/scss/styles.scss'
 
 import React from 'react';
 import update from 'immutability-helper';
@@ -12,7 +12,7 @@ class App extends React.Component {
         super();
         this.state = {
             one: {
-                text: 'force push',
+                text: 'Force Push',
                 class: 'hidden',
                 items: {
                     Luke: "Jedi Knight",

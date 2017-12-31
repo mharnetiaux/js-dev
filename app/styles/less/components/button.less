@@ -1,0 +1,24 @@
+@white: #fff;
+@black: #000;
+@dark-grey: #333;
+
+@button-color: @dark-grey;
+@background-color: @black;
+
+
+button {
+  &::after {
+    content: ' :-)';
+  }
+}
+
+
+.bg-dark() {
+  background-color: @background-color;
+}
+
+
+body {
+  .bg-dark();
+  color: @white;
+}
