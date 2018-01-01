@@ -11,7 +11,7 @@
 
 Local server listening on `localhost:8080`, once you've run the following commands:
 
-  1. `cd` into project root directory -- run `npm install`
+  1. `cd` into root directory -- run `npm install`
   
   2. `npm run start` -- navigate to `localhost:8080`
 
