@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let Button=(props)=>{
+let Button = (props) => {
     "use strict";
     return(
         <button onClick={props.action}>{props.text}</button>
