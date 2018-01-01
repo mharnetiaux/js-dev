@@ -9,7 +9,7 @@ Local environment for Devs to mess around with React. It runs a local server lis
 
   1. `cd` into project root directory -- run `npm install`
   
-  2. `npm run start` -- navigate to `localhost:3000`
+  2. `npm run start` -- navigate to `localhost:8080`
 
 # Cool Features
 
