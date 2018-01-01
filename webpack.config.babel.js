@@ -1,12 +1,12 @@
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import env_options from './webpack/enviornment.js';
+import environment from './webpack/enviornment.js';
 import path from 'path';
 
 
 const config = {
-    entry: env_options.setHotModule(),
+    entry: environment.setHotModule(),
     output: {
         path: __dirname + '/dist',
         filename: 'scripts/[name].bundle.js',
@@ -47,7 +47,7 @@ const config = {
     plugins: [
         new ExtractTextPlugin({
             filename: 'styles/[name].bundle.css',
-            disable: env_options.setInline()
+            disable: environment.setInline()
         }),
         new HtmlWebpackPlugin({
             tile: 'Home Page Template',

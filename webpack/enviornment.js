@@ -1,5 +1,5 @@
-const test = {
-    isDev: false,
+const environment = {
+    isDev: true,
     setHotModule: function () {
         if(this.isDev) {
             return [
@@ -16,4 +16,4 @@ const test = {
     }
 };
 
-export default test;
+export default environment;

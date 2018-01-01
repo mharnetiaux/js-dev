@@ -1,9 +1,7 @@
 import path from 'path';
 import webpackConfig from '../webpack.config.babel';
 
-
-
-const options = {
+const middleware_options = {
     publicPath:webpackConfig.output.publicPath,
     contentBase:path.resolve(__dirname, './dist'),
     historyApiFallback: true,
@@ -27,4 +25,4 @@ const options = {
     }
 };
 
-export default options;
+export default middleware_options;
