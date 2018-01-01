@@ -1,7 +1,7 @@
 const environment = {
     isDev: true,
-    setHotModule: function () {
-        if(this.isDev) {
+    hotModule: function() {
+        if (this.isDev) {
             return [
                 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
                 './app/app.js'
@@ -9,8 +9,8 @@ const environment = {
         }
         return './app/app.js'
     },
-    setEmbeddedStyles: function () {
-        if(this.isDev) {
+    embeddedStyles: function() {
+        if (this.isDev) {
             return true;
         }
     }
