@@ -21,4 +21,4 @@ Local server listening on `localhost:8080`, once you've run the following comman
   
   SASS and LESS -- preprocessor for CSS
   
-  Hot reloading -- your `JS` and `CSS` is compiled, and server refreshed... just press save.
+  Hot reloading -- JS and CSS compiled, server refreshed... just press save.
