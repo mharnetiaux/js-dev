@@ -8,7 +8,7 @@
 Local environment for Devs to mess around with React.
 
 # Cool Features
-`
+
 Local server listening on `localhost:8080`, once you've run the following commands:
 
   1. `cd` into project root directory -- run `npm install`
