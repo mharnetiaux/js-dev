@@ -47,7 +47,7 @@ const config = {
     plugins: [
         new ExtractTextPlugin({
             filename: 'styles/[name].bundle.css',
-            disable: environment.setInline()
+            disable: environment.setEmbeddedStyles()
         }),
         new HtmlWebpackPlugin({
             tile: 'Home Page Template',

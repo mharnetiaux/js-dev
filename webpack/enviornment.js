@@ -9,7 +9,7 @@ const environment = {
         }
         return './app/app.js'
     },
-    setInline: function () {
+    setEmbeddedStyles: function () {
         if(this.isDev) {
             return true;
         }
