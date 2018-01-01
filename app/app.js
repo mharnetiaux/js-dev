@@ -1,6 +1,5 @@
 import './styles/less/styles.less'
 import './styles/scss/styles.scss'
-
 import React from 'react';
 import update from 'immutability-helper';
 import Nav from './components/Nav';
