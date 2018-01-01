@@ -14,20 +14,7 @@ class Nav extends React.Component{
         this.props.action();
     }
     
-    render(){
-        /*let a = Object.keys(this.props.state).map((item)=>{
-            return this.props.state[item];
-        });
-
-        let b = a.map((item,id)=>{
-            return (
-                <div key={id}>
-                    <Button text={item.text} action={this.toggleNav}/>
-                    <Nav class={item.class} items={item.items} />
-                </div>
-            );
-        });*/
-
+    render() {
         return(
             <nav>
                 <Button text={this.props.data.one.text} action={this.toggleNav} />
