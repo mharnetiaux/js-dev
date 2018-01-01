@@ -4,8 +4,8 @@
 
 
 # React
-
-Local environment for Devs to mess around with React.
+ 
+ Environment for Devs to mess around with React.
 
 # Cool Features
 
