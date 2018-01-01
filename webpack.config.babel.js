@@ -4,7 +4,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import environment from './webpack/enviornment.js';
 import path from 'path';
 
-
 const config = {
     entry: environment.setHotModule(),
     output: {
