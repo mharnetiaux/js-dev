@@ -13,7 +13,7 @@ Local environment for Devs to mess around with React. It runs a local server lis
 
 # Cool Features
 
-  run `npm build` to publish code into a `./dist` folder
+  Run `npm build` to publish code into a `./dist` folder
 
   ES6 to ES5 -- transpile ES6 to ES5
   
