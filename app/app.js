@@ -17,8 +17,8 @@ class App extends React.Component {
                 items: {
                     Luke: "Jedi Knight",
                     Leah: "Leader of Rebellion",
-                    Han: "Smuggler",
-                    Chewy: "Smuggler and Wookie"
+                    Han: "Human Smuggler",
+                    Chewy: "Wookie Smuggler"
                 }
             }
         };
@@ -45,6 +45,5 @@ class App extends React.Component {
         );
     }
 }
-
 
 ReactDOM.render(<App />, document.getElementById('root'));
