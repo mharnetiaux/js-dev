@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rm -f -r ./dist & babel-node -- server/server.js",
-    "build": "webpack -p"
+    "start": "rm -f -r ./dist & replace 'false' 'true' webpack/enviornment.js & babel-node -- server/server.js",
+    "build": "replace 'true' 'false' webpack/enviornment.js & webpack -p"
   },
   "author": "Matt Harnetiaux <mattskyh@gmail.com>",
   "license": "ISC",
@@ -31,6 +31,7 @@
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^15.6.1",
+    "replace": "^0.3.0",
     "sass-loader": "^6.0.6",
     "sinon": "^4.1.3",
     "style-loader": "^0.18.2",
