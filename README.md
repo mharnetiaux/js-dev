@@ -5,13 +5,15 @@
 
 # React
 
-Local environment for Devs to mess around with React. It runs a local server listening on `localhost:3000`, once you've run the following commands:
+Local environment for Devs to mess around with React.
+
+# Cool Features
+ 
+  Run server listening on `localhost:3000`, once you've run the following commands:
 
   1. `cd` into project root directory -- run `npm install`
   
   2. `npm run start` -- navigate to `localhost:8080`
-
-# Cool Features
 
   Run `npm build` to publish code into a `./dist` folder
 
