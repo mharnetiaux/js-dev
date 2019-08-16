@@ -10,7 +10,7 @@ header {
     z-index: 1;
 
     .messageCount {
-        background: #000;
+        background: #333;
         color: #ccc;
         align-items: center;
         border: 1px solid #999;
@@ -36,6 +36,7 @@ section {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    font-size: 0.8rem;
     margin: 0.5rem 0 1rem 0;
     padding: 0 0.5rem;
     position: relative;
@@ -102,13 +103,17 @@ form {
         min-height: 2rem;
         flex: 1;
         text-indent: 0.5rem;
+
+        &::placeholder {
+            color: #ccc;
+        }
     }
 
     button {
-        background: #000;
+        background: #333;
         border-color: #000;
         border-radius: 15%;
-        color: #ccc;
+        color: #fff;
         margin-left: 0.5rem;
         min-height: 2rem;
         flex-basis: 20%;
