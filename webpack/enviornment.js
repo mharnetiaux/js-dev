@@ -4,10 +4,10 @@ const environment = {
         if (this.isDev) {
             return [
                 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
-                './app/app.js'
+                './app/ChatApp.js'
             ]
         }
-        return './app/app.js'
+        return './app/ChatApp.js'
     },
     embeddedStyles: function() {
         if (this.isDev) {

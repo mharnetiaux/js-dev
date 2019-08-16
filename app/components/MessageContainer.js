@@ -1,14 +1,7 @@
 import React, {Component } from 'react';
 import Message from '../components/Message.js';
 
-class Feed extends Component {
-    constructor(){
-        super();
-        this.state = {
-            like: ""
-        }
-    }
-
+class MessageContainer extends Component {
     render() {
         const messages = this.props.messages;
         return(
@@ -16,6 +9,4 @@ class Feed extends Component {
         );
     }
 }
-
-export default Feed;
-
+export default MessageContainer;

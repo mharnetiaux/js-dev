@@ -61,5 +61,4 @@ const config = {
         children: false
     }
 };
-
 export default config;
