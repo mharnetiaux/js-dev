@@ -40,24 +40,27 @@ section {
 
     li {
         padding: 0.2rem 0;
+        word-break: break-all;
 
         &.user {
-           font-size: 0.7rem;
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
         }
     }
 
     button {
-        background: #000;
-        border: none;
-        color: #fff;
-        font-size: 0.8rem;
+        background: none;
+        border: 1px solid #999;
+        color: #000;
+        font-size: 0.7rem;
         position: absolute;
+        min-width: 2rem;
         top: 0;
         right: 0.5rem;
 
         &::before {
             content: "+";
-            color: #fff;
+            color: #000;
         }
     }
 }
@@ -87,5 +90,9 @@ form {
         color: #fff;
         margin-left: 0.5rem;
         flex-basis: 20%;
+
+        @media screen and (min-width: 1400px) {
+            flex-basis: 7%;
+        }
     }
 }
