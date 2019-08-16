@@ -52,6 +52,7 @@ section {
     }
 
     button {
+        opacity: 0.7;
         background: none;
         border-radius: 15%;
         color: #000;
@@ -61,18 +62,15 @@ section {
         top: 0;
         right: 0.5rem;
 
-        &:hover {
+        &:hover,
+        &:active {
             background: #000;
             color: #fff;
+            opacity: 1;
 
             &::before {
                 color: #fff;
             }
-        }
-
-        &::before {
-            content: "+";
-            color: #000;
         }
     }
 }
