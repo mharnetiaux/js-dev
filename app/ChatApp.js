@@ -71,7 +71,6 @@ class ChatApp extends Component {
                 </section>
                 <footer><SendMessage sendMessage={this.sendMessage} /></footer>
             </main>
-
         );
     }
 }

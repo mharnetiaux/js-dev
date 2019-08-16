@@ -31,6 +31,4 @@ class SendMessage extends Component {
         );
     }
 }
-
 export default SendMessage;
-
