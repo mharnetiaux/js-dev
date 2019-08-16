@@ -1,1 +1,91 @@
-@import "components/_all.less";
+@import "reset.less";
+body {
+    font-family: Arial;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+    .title {
+        background: #000;
+        color: #fff;
+        align-items: center;
+        border: 1px solid #999;
+        display: flex;
+        min-height: 2rem;
+        justify-content: center;
+    }
+}
+
+section {
+    position: fixed;
+    bottom: 4rem;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 85%;
+}
+
+
+
+.message {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+    position: relative;
+
+    li {
+        padding: 0.2rem 0;
+
+        &.user {
+           font-size: 0.7rem;
+        }
+    }
+
+    button {
+        background: #000;
+        border: none;
+        color: #fff;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 0;
+        right: 0.5rem;
+
+        &::before {
+            content: "+";
+            color: #fff;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    padding: 0 0.5rem;
+
+    input {
+        border: 1px solid #666;
+        min-height: 2rem;
+        flex: 1;
+        text-indent: 0.5rem;
+    }
+
+    button {
+        background: #000;
+        border: none;
+        color: #fff;
+        margin-left: 0.5rem;
+        flex-basis: 20%;
+    }
+}
