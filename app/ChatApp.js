@@ -65,7 +65,7 @@ class ChatApp extends Component {
         const messageCount = this.state.messages.length;
         return (
             <main>
-                <header><h2 className="messageCount">Messages <span>{messageCount} )</span></h2></header>
+                <header><h2 className="messageCount">( Messages <span>{messageCount} )</span></h2></header>
                 <section>
                     {this.state.messages.length ? <MessageContainer messages={this.state.messages} sendLike={this.sendLike} /> : <Loading/>}
                 </section>
