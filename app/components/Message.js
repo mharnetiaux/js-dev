@@ -4,7 +4,7 @@ import LikeButton from '../components/LikeButton.js';
 const Message = (props) => {
     const chatContent = Object.keys(props.messages).map((item) => props.messages[item]);
     return(
-        <div>
+        <span>
             {chatContent.map((content, id) =>
                 <ul key={id} className="message">
                     <li className="user">{content.user}</li>
@@ -12,7 +12,7 @@ const Message = (props) => {
                     <li><LikeButton likeCount={content.likes} /></li>
                 </ul>
             )}
-        </div>
+        </span>
     );
 };
 export default Message;
