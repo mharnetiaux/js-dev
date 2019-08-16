@@ -11,9 +11,7 @@ class ChatApp extends Component {
         super();
         // Redux move
         this.state = {
-            messages: [],
-            loading: false,
-            errored: false
+            messages: []
         };
         this.sendMessage = this.sendMessage.bind(this);
         this.sendLike = this.sendLike.bind(this);
@@ -36,8 +34,7 @@ class ChatApp extends Component {
         console.log(like);
     }
     // Method to make GET request
-    getFeed(url) {
-        this.setState({loading: true});
+    getMessages(url) {
         const messages = this.state.messages;
         // Fetch API - AJAX
         // Add method, headers?
@@ -58,11 +55,11 @@ class ChatApp extends Component {
                 // populate state messages
                 this.setState({messages})
             })
-            .catch(() => this.setState({ errored: true }));
+            .catch(() => console.log("Error"));
     }
     // Make GET request once app is rendered
     componentDidMount() {
-        this.getFeed(messages);
+        this.getMessages(messages);
     }
     render() {
         const messageCount = this.state.messages.length;
