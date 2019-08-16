@@ -15,7 +15,6 @@ class ChatApp extends Component {
         };
         this.sendMessage = this.sendMessage.bind(this);
         this.sendLike = this.sendLike.bind(this);
-
     }
     // Update state messages on submit
     sendMessage(message){
@@ -61,6 +60,7 @@ class ChatApp extends Component {
     componentDidMount() {
         this.getMessages(messages);
     }
+
     render() {
         const messageCount = this.state.messages.length;
         return (
